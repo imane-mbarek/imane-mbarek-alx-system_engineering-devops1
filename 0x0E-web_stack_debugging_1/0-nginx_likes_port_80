@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# test config
+
+# delet
+rm /etc/nginx/sites-enabled/default
+# config
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+# restart
+service nginx restart
